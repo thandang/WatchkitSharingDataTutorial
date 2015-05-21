@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblText;
+@property (weak, nonatomic) IBOutlet UITextField *txtInput;
+
+
 
 @end
 
@@ -23,5 +27,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)saveUserInfo:(id)sender {
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.apide.sharingdata"];
+    [userDefaults setObject:self.txtInput.text forKey:@"userInput"];
+    [userDefaults synchronize];
+    self.lblText.text = self.txtInput.text;
+}
+
+
 
 @end

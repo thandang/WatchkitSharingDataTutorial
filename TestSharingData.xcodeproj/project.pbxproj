@@ -14,6 +14,12 @@
 		752E77171B0C948600FAE749 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752E77161B0C948600FAE749 /* Images.xcassets */; };
 		752E771A1B0C948600FAE749 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 752E77181B0C948600FAE749 /* LaunchScreen.xib */; };
 		752E77261B0C948600FAE749 /* TestSharingDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E77251B0C948600FAE749 /* TestSharingDataTests.m */; };
+		752E77391B0C95C200FAE749 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E77381B0C95C200FAE749 /* InterfaceController.m */; };
+		752E773B1B0C95C200FAE749 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752E773A1B0C95C200FAE749 /* Images.xcassets */; };
+		752E773F1B0C95C300FAE749 /* TestSharingData WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 752E773E1B0C95C300FAE749 /* TestSharingData WatchKit App.app */; };
+		752E77471B0C95C300FAE749 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 752E77451B0C95C300FAE749 /* Interface.storyboard */; };
+		752E77491B0C95C300FAE749 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752E77481B0C95C300FAE749 /* Images.xcassets */; };
+		752E774C1B0C95C300FAE749 /* TestSharingData WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 752E77331B0C95C200FAE749 /* TestSharingData WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +30,35 @@
 			remoteGlobalIDString = 752E77051B0C948600FAE749;
 			remoteInfo = TestSharingData;
 		};
+		752E77401B0C95C300FAE749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 752E76FE1B0C948600FAE749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 752E773D1B0C95C300FAE749;
+			remoteInfo = "TestSharingData WatchKit App";
+		};
+		752E774A1B0C95C300FAE749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 752E76FE1B0C948600FAE749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 752E77321B0C95C200FAE749;
+			remoteInfo = "TestSharingData WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		752E77531B0C95C300FAE749 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				752E774C1B0C95C300FAE749 /* TestSharingData WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		752E77061B0C948600FAE749 /* TestSharingData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSharingData.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +74,17 @@
 		752E771F1B0C948600FAE749 /* TestSharingDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSharingDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		752E77241B0C948600FAE749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		752E77251B0C948600FAE749 /* TestSharingDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSharingDataTests.m; sourceTree = "<group>"; };
+		752E77331B0C95C200FAE749 /* TestSharingData WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TestSharingData WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		752E77361B0C95C200FAE749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		752E77371B0C95C200FAE749 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		752E77381B0C95C200FAE749 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		752E773A1B0C95C200FAE749 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		752E773E1B0C95C300FAE749 /* TestSharingData WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestSharingData WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		752E77441B0C95C300FAE749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		752E77461B0C95C300FAE749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		752E77481B0C95C300FAE749 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		752E77541B0C965000FAE749 /* TestSharingData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestSharingData.entitlements; sourceTree = "<group>"; };
+		752E77551B0C973100FAE749 /* TestSharingData WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TestSharingData WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +102,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		752E77301B0C95C200FAE749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +117,8 @@
 			children = (
 				752E77081B0C948600FAE749 /* TestSharingData */,
 				752E77221B0C948600FAE749 /* TestSharingDataTests */,
+				752E77341B0C95C200FAE749 /* TestSharingData WatchKit Extension */,
+				752E77421B0C95C300FAE749 /* TestSharingData WatchKit App */,
 				752E77071B0C948600FAE749 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +128,8 @@
 			children = (
 				752E77061B0C948600FAE749 /* TestSharingData.app */,
 				752E771F1B0C948600FAE749 /* TestSharingDataTests.xctest */,
+				752E77331B0C95C200FAE749 /* TestSharingData WatchKit Extension.appex */,
+				752E773E1B0C95C300FAE749 /* TestSharingData WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +137,7 @@
 		752E77081B0C948600FAE749 /* TestSharingData */ = {
 			isa = PBXGroup;
 			children = (
+				752E77541B0C965000FAE749 /* TestSharingData.entitlements */,
 				752E770D1B0C948600FAE749 /* AppDelegate.h */,
 				752E770E1B0C948600FAE749 /* AppDelegate.m */,
 				752E77101B0C948600FAE749 /* ViewController.h */,
@@ -119,6 +176,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		752E77341B0C95C200FAE749 /* TestSharingData WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				752E77551B0C973100FAE749 /* TestSharingData WatchKit Extension.entitlements */,
+				752E77371B0C95C200FAE749 /* InterfaceController.h */,
+				752E77381B0C95C200FAE749 /* InterfaceController.m */,
+				752E773A1B0C95C200FAE749 /* Images.xcassets */,
+				752E77351B0C95C200FAE749 /* Supporting Files */,
+			);
+			path = "TestSharingData WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		752E77351B0C95C200FAE749 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				752E77361B0C95C200FAE749 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		752E77421B0C95C300FAE749 /* TestSharingData WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				752E77451B0C95C300FAE749 /* Interface.storyboard */,
+				752E77481B0C95C300FAE749 /* Images.xcassets */,
+				752E77431B0C95C300FAE749 /* Supporting Files */,
+			);
+			path = "TestSharingData WatchKit App";
+			sourceTree = "<group>";
+		};
+		752E77431B0C95C300FAE749 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				752E77441B0C95C300FAE749 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +224,12 @@
 				752E77021B0C948600FAE749 /* Sources */,
 				752E77031B0C948600FAE749 /* Frameworks */,
 				752E77041B0C948600FAE749 /* Resources */,
+				752E77531B0C95C300FAE749 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				752E774B1B0C95C300FAE749 /* PBXTargetDependency */,
 			);
 			name = TestSharingData;
 			productName = TestSharingData;
@@ -157,6 +254,39 @@
 			productReference = 752E771F1B0C948600FAE749 /* TestSharingDataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		752E77321B0C95C200FAE749 /* TestSharingData WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 752E77501B0C95C300FAE749 /* Build configuration list for PBXNativeTarget "TestSharingData WatchKit Extension" */;
+			buildPhases = (
+				752E772F1B0C95C200FAE749 /* Sources */,
+				752E77301B0C95C200FAE749 /* Frameworks */,
+				752E77311B0C95C200FAE749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				752E77411B0C95C300FAE749 /* PBXTargetDependency */,
+			);
+			name = "TestSharingData WatchKit Extension";
+			productName = "TestSharingData WatchKit Extension";
+			productReference = 752E77331B0C95C200FAE749 /* TestSharingData WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		752E773D1B0C95C300FAE749 /* TestSharingData WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 752E774D1B0C95C300FAE749 /* Build configuration list for PBXNativeTarget "TestSharingData WatchKit App" */;
+			buildPhases = (
+				752E773C1B0C95C300FAE749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestSharingData WatchKit App";
+			productName = "TestSharingData WatchKit App";
+			productReference = 752E773E1B0C95C300FAE749 /* TestSharingData WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +298,28 @@
 				TargetAttributes = {
 					752E77051B0C948600FAE749 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = SA9N58MZ5Q;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					752E771E1B0C948600FAE749 = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = 752E77051B0C948600FAE749;
+					};
+					752E77321B0C95C200FAE749 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = SA9N58MZ5Q;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					752E773D1B0C95C300FAE749 = {
+						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
@@ -190,6 +338,8 @@
 			targets = (
 				752E77051B0C948600FAE749 /* TestSharingData */,
 				752E771E1B0C948600FAE749 /* TestSharingDataTests */,
+				752E77321B0C95C200FAE749 /* TestSharingData WatchKit Extension */,
+				752E773D1B0C95C300FAE749 /* TestSharingData WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +359,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752E77311B0C95C200FAE749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752E773F1B0C95C300FAE749 /* TestSharingData WatchKit App.app in Resources */,
+				752E773B1B0C95C200FAE749 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752E773C1B0C95C300FAE749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752E77471B0C95C300FAE749 /* Interface.storyboard in Resources */,
+				752E77491B0C95C300FAE749 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +401,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		752E772F1B0C95C200FAE749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752E77391B0C95C200FAE749 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +416,16 @@
 			isa = PBXTargetDependency;
 			target = 752E77051B0C948600FAE749 /* TestSharingData */;
 			targetProxy = 752E77201B0C948600FAE749 /* PBXContainerItemProxy */;
+		};
+		752E77411B0C95C300FAE749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 752E773D1B0C95C300FAE749 /* TestSharingData WatchKit App */;
+			targetProxy = 752E77401B0C95C300FAE749 /* PBXContainerItemProxy */;
+		};
+		752E774B1B0C95C300FAE749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 752E77321B0C95C200FAE749 /* TestSharingData WatchKit Extension */;
+			targetProxy = 752E774A1B0C95C300FAE749 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -258,6 +444,14 @@
 				752E77191B0C948600FAE749 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		752E77451B0C95C300FAE749 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				752E77461B0C95C300FAE749 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -349,9 +543,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestSharingData/TestSharingData.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TestSharingData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -359,9 +557,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestSharingData/TestSharingData.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TestSharingData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -399,6 +601,70 @@
 			};
 			name = Release;
 		};
+		752E774E1B0C95C300FAE749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = TestSharingData_WatchKit_Extension;
+				INFOPLIST_FILE = "TestSharingData WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		752E774F1B0C95C300FAE749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = TestSharingData_WatchKit_Extension;
+				INFOPLIST_FILE = "TestSharingData WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		752E77511B0C95C300FAE749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TestSharingData WatchKit Extension/TestSharingData WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TestSharingData WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		752E77521B0C95C300FAE749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TestSharingData WatchKit Extension/TestSharingData WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "TestSharingData WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -424,6 +690,22 @@
 			buildConfigurations = (
 				752E772D1B0C948600FAE749 /* Debug */,
 				752E772E1B0C948600FAE749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		752E774D1B0C95C300FAE749 /* Build configuration list for PBXNativeTarget "TestSharingData WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				752E774E1B0C95C300FAE749 /* Debug */,
+				752E774F1B0C95C300FAE749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		752E77501B0C95C300FAE749 /* Build configuration list for PBXNativeTarget "TestSharingData WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				752E77511B0C95C300FAE749 /* Debug */,
+				752E77521B0C95C300FAE749 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
